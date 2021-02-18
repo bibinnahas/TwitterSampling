@@ -12,7 +12,7 @@ object PrintTweets {
 
     // Configure Twitter credentials using twitter.txt
     setupTwitter()
-    val ssc = new StreamingContext("local[*]", "PrintTweets", Seconds(5))
+    val ssc = new StreamingContext("local[*]", "PrintTweets", Seconds(3))
 
     // Get rid of log spam (should be called after the context is set up)
     setupLogging()
